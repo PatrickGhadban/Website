@@ -1,15 +1,17 @@
 body{
   background-color: lightgray;
   margin:0; /*Counteracts the padding on the browser to lineup on the edges of the page*/
+  padding: 0;
 }
 
 /* -------- Contains the Logo, Navigation Bar, Text on the picure and Buttons --------*/
 .header-wrapper{
   width: 100%;
   height: 800px;
-  background-image: url(images/image1.png);
+  background-image: url(images/Picture1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: auto;
 }
 
 /* -------- Navigation Bar -------- */
@@ -34,14 +36,18 @@ body{
   text-align: center;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -50%);
 }
 
 /* -------- COMING SOON -------- */
+
+.middle, .brief-description{
+  color: #fff;
+}
+
 .middle{
-  color: #000;
-  font-family: Arial Black;
-  font-size: 80px;
+  font-family: system-ui;
+  font-size: 90px;
   margin: 0;
   padding: 0;
   padding-bottom: 2px;
@@ -49,19 +55,15 @@ body{
 
 /* -------- Text below coming soon -------- */
 .brief-description{
+  font-family: Arial Black;
   margin-top: 0px;
-  font-family: helvetica;
-  color: #000;
 }
 
 /* -------- Home Page Buttons -------- */
-.button-wrapper{
-
-}
 
 .subscription, .learn-more{
-  color: #000;
-  border-color: #000;
+  color: #fff;
+  border-color: #fff;
   border-radius: 10px;
   font-family: Arial Black;
   font-size: 20px;
@@ -70,10 +72,12 @@ body{
 .subscription{
   width: 270px;
   height: 60px;
-  background-image: linear-gradient(-90deg, rgb(0, 96, 153), rgb(218,112,214));
+  background-color: purple; /*rgb(138,43,226); */
+  /* background-image: linear-gradient(-90deg, rgb(0, 96, 153), rgb(218,112,214)); */
   margin-right: 10px;
 }
 .subscription:hover {
+  opacity: 0.8;
   box-shadow: 0 9px #000;
 }
 
@@ -85,26 +89,75 @@ body{
 }
 .learn-more:hover {
   box-shadow: 0 9px #000;
-  background-color: #fff;
+  background-color: #000;
 }
 
-/* -------- Subscriptions -------- */
+/* -------- Subscriptions / About caregiVR -------- */
+.subscribe-wrapper{
+  box-shadow: 5px 10px 20px lightblue inset;
+}
+
+.subscription-title{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 50px;
+  font-family: system-ui;
+}
+
+.not-spam{
+  font-size: 20px;
+  font-family: system-ui;
+}
+
+.design-choice{
+  width: 150px;
+  height: 13px;
+  border-radius: 10px;
+  background-image: linear-gradient(-90deg, rgb(218,112,214), indigo);
+  border: 1px solid transparent;
+  margin-bottom: 30px;
+}
+
 .subscribe-wrapper, .information-wrapper{
   border-top-style: groove;
-  border-color: darkblue;
+  border-bottom-color: darkblue;
   padding: 100px;
   background-color: rgb(0, 96, 153);
   color: #fff;
 }
 
-/* -------- About caregiVR -------- */
-.information-wrapper{
-  
-
+.info-subscription-wrapper{
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
 }
 
-.subscribe-wrapper{
+.information-wrapper{
+  font-family: Arial;
+  width: 560px;
+  height: 400px;
+  background-color: rgb(186,85,211);
+  padding: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 30px;
+  margin-right: 60px;
+  border-top: none;
+  text-align: center;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  overflow: auto;
+}
 
+.container{
+  overflow: auto;
+  /* box-shadow: 2px 2px 2px lightblue ; */
+}
+
+.container placeholder, h5{
+  font-family: Arial;
+}
+
+.container h5{
+  font-style: oblique;
 }
 
 input[type=text]{
@@ -128,15 +181,6 @@ input[type=submit] {
 
 input[type=submit]:hover {
   opacity: 0.8;
-}
-
-.design-choice{
-  margin-bottom: 30px;
-  width: 150px;
-  height: 13px;
-  border-radius: 10px;
-  background-image: linear-gradient(-90deg, rgb(218,112,214), indigo);
-  border: 1px solid transparent;
 }
 
 footer{
