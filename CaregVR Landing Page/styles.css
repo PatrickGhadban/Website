@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: lightgray;
   margin:0; /*Counteracts the padding on the browser to lineup on the edges of the page*/

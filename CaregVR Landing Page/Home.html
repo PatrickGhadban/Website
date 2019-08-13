@@ -3,6 +3,7 @@
   <head>
     <title>caregiVR.com</title>
     <link rel="stylesheet" type"text/css" href="styles.css">
+    <script src="script.js"></script>
     <!-- <link rel="icon" type = "image/png" href="_____.png" /> Adds icon to web browser tab -->
   </head>
 
@@ -17,8 +18,8 @@
           <h1 class="middle">COMING SOON</h1>
           <h1 class="brief-description">Using digital tools to empower caregivers and ease <br> the suffering of dementia patients and their families</h1>
           <div class="button-wrapper">
-            <button class="subscription">KEEP ME UPDATED!</button>
-            <button class="learn-more">LEARN MORE</button>
+            <button class="subscription" onclick="scrollFunction()">KEEP ME UPDATED!</button>
+            <button class="learn-more" onclick="scrollFunction()">LEARN MORE</button>
           </div>
         </div>
 
@@ -26,26 +27,27 @@
     </header>
 
     <div class="subscribe-wrapper">
-      <h1 class="subscription-title">Subscribe to our Newsletter</h1>
-      <h3 class="not-spam">(We promise to never spam you)</h3>
-      <button class="design-choice"></button>
+      <div id="scroll-subscription"> <!-- Reason: when "KEEP ME UPDATED" or "LEARN MORE" buttons are clicked, the page will scroll here -->
+        <h1 class="subscription-title">Subscribe to our Newsletter</h1>
+        <h3 class="not-spam">(We promise to never spam you)</h3>
+        <button class="design-choice"></button>
 
-      <div class="info-subscription-wrapper">
-        <div class="information-wrapper">
-          <h2>"At caregiVR, we focus on creating useful technologies and tools for family and caregivers tending to loved ones suffering from Alzheimer's and other dementias.
-               Currently there is no pharmacological cure for Alzheimer's disease, however, research shows that lifesytle and cognitive activity has a lot to do with brain health.</h2>
-          <h2>Our tools aim to empower the care team by employing the latest in digital technologies and science to Alzheimer's care."</h2>
-        </div>
+        <div class="info-subscription-wrapper">
+          <div class="information-wrapper">
+            <h2>"At caregiVR, we focus on creating useful technologies and tools for family and caregivers tending to loved ones suffering from Alzheimer's and other dementias.
+                 Currently there is no pharmacological cure for Alzheimer's disease, however, research shows that lifesytle and cognitive activity has a lot to do with brain health.</h2>
+            <h2>Our tools aim to empower the care team by employing the latest in digital technologies and science to Alzheimer's care."</h2>
+          </div>
 
-        <div class="container">
-          <input type="text" placeholder="*Name" name="name" required>
-          <input type="text" placeholder="*Email address" name="mail" required>
-          <h5>* Required Fields</h5>
-          <input type="submit" value="SUBSCRIBE">
+          <div class="container">
+            <input type="text" placeholder="*Name" name="name" required>
+            <input type="text" placeholder="*Email address" name="mail" required>
+            <h5>* Required Fields</h5>
+            <input type="submit" value="SUBSCRIBE">
+          </div>
         </div>
       </div>
     </div>
-
 
     <footer>
       <p> ©caregiVR - MADE FOR GREAT PEOPLE </p>
