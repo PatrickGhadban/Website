@@ -40,18 +40,50 @@
           </div>
 
           <div class="container">
-            <input type="text" placeholder="*Name" name="name" required>
-            <input type="text" placeholder="*Email address" name="mail" required>
-            <h5>* Required Fields</h5>
-            <input type="submit" value="SUBSCRIBE">
+            <form id="contactForm" action="php/Newsletter_signup.php" method="post">
+                <input id = "name_data" type="text" placeholder="Name" name="name" required>
+                <input id = "email_data" type="text" placeholder="*Email address" name="email" required>
+                <h5>* Required Fields</h5>
+                <span class="email-message" id="email_msg"></span>
+                <button id="email_submit" class="email" type="button">SUBSCRIBE</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
 
     <footer>
-      <p> ©caregiVR - MADE FOR GREAT PEOPLE </p>
+      <p>©caregiVR - MADE FOR GREAT PEOPLE</p>
     </footer>
   </body>
 
 </html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$(document).ready(function (){
+	$("#email_submit").click(function (){
+		var $email_data_var;
+    var $name_data_var;
+		$email_data_var = $("#email_data").val();
+    $name_data_var = $("#name_data").val();
+    if($name_data_var == ''){
+      $("#email_msg").html("*Please Enter Your Name*");
+    }
+		if($email_data_var == ''){
+      $("#email_msg").html("*Please Enter An Email Address*");
+    }
+    else{
+			$.ajax({
+				type:'POST',
+				url:"php/email-submit.php",
+				data:{email_data_values : $email_data_var, name_data_values : $name_data_var},
+				success:function(response){
+					$("#email_msg").html(response);
+				}
+			});
+		}
+	});
+});
+</script>

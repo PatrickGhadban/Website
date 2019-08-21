@@ -82,7 +82,7 @@ body{
 }
 .subscription:hover {
   opacity: 0.8;
-  box-shadow: 0 9px #000;
+  /* box-shadow: 0 9px #000; */
 }
 
 .learn-more{
@@ -92,7 +92,7 @@ body{
   background-color: transparent;
 }
 .learn-more:hover {
-  box-shadow: 0 9px #000;
+  /* box-shadow: 0 9px #000; */
   background-color: #000;
 }
 
@@ -173,7 +173,7 @@ input[type=text]{
   display: block;
 }
 
-input[type=submit] {
+.email{
   width: 300px;
   height: 60px;
   color: white;
@@ -183,9 +183,21 @@ input[type=submit] {
   border: 1px solid #fff;
 }
 
-input[type=submit]:hover {
+.email:hover{
   opacity: 0.8;
 }
+
+.email-message{
+	width: 100%;
+	display: inherit;
+  font-family: Arial Black;
+	font-size: 20px;
+	font-weight: 500;
+	color: Black;
+	padding: 10px auto;
+  margin-bottom: 10px;
+}
+
 
 footer{
   border-top-style: groove;
