@@ -67,17 +67,5 @@ class Config{
 			return true;
 		}
 	}
-
-	public function send_email($name, $email_address){
-		$subject = "Subscription Confirmation";
-		$message = "Hi $name,\n\n Thank you for signing up for the CaregiVR Newsletter!\n
-		          If you have any questions please feel free to reach out to me directly at: my_email@caregiVR.com\n\n
-		          All the best,\n
-		          Your friends at caregiVR";
-		$message = wordwrap($message, 70);
-		$headers = "From: PGhadban@gmail.com";
-		mail($email_address, $subject, $message);
-	}
-
 }
 ?>
