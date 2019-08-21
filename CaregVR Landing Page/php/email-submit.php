@@ -15,7 +15,6 @@ if(isset($_POST['email_data_values'])){
 		if($email_check){
 			$insert = $email_access->insert($name, $n_email);
 			if($insert){
-        $is_email_sent = $email_access->send_email($name, $n_email);
 				echo "Thank You For Subscribing!";
 			}
 			else{
