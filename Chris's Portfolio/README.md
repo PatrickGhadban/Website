@@ -1,5 +1,6 @@
 # Chris's Portfolio
 
+* Used HTML, CSS, &  Bootstrap
 * I built this website for my oldest brother who is applying to business school and wanted to display his diverse skillset / background.
 * Furthermore, I used the same design for my other older brother (a tattoo artist) to display his work.
 * It's a simple portfolio website for an artist looking to display his or her work; featuring the following:
