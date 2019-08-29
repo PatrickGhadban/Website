@@ -8,7 +8,7 @@
 * Website functionality includes:
   * Option to subscribe - emails are stored in a MySQL DB and a responsive email is sent.
   * Cross functionality on browsers & devices
-  * Cool, animated buttons that scroll the use from the top page to the subscription page at the bottom.
+  * Cool (subjectively), animated buttons that scroll the use from the top page to the subscription page at the bottom.
   
  * To view the final design watch the final draft here. Also, the third draft displays the subscription functionality nicely.
 https://github.com/PatrickGhadban/Websites/tree/master/CaregVR%20Landing%20Page/Drafts
