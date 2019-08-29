@@ -1,5 +1,6 @@
 # Matt's Portfolio
 
+* Used HTML, CSS, &  Bootstrap
 * I built this website for my older brother's birthday. He's an incredibly talented tattoo artist but didn't have a a portfolio to display his work. 
 * I plan to update the website per his career needs.
 * It's a simple portfolio website for an artist looking to display his or her work; featuring the following:
