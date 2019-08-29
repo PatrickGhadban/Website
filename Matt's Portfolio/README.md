@@ -8,5 +8,5 @@
     * A sleek "About" page with a profile picture and a short description of the owner.
     * A footer that is complete with scocial media icon buttons.
 
-Here is some of his work. If you like him, follow him https://www.instagram.com/mtghadban/?hl=en
-
+Here is some of his work. Follow him at: https://www.instagram.com/mtghadban/?hl=en
+![image](https://user-images.githubusercontent.com/26176491/63955681-2007f700-ca53-11e9-9123-595892aa702a.png)
